@@ -5,12 +5,13 @@
 import pytest
 from playwright.sync_api import Playwright, sync_playwright, expect
 from Test_methods.sauceDemo_LoginPage import *
+import conftest
+from Config.config import TestData
 
 
 class TestLoginPage:
     """Test case to verify the URL Title"""
 
-    def test_URL_Title(self, page):
-        login_page = LoginPage(base_url=TestData.baseURL)
-        login_page.urlTitle()
-        expect(page).to_have_title(TestData.urlTitle), 'Title is mismatching'
+    def test_URL_Title(self, web_launch):
+        urlTitle = web_launch.urlTitle()
+        assert urlTitle == TestData.urlTitle
