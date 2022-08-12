@@ -1,4 +1,15 @@
 # Playwright
-This repo is all about Playwright with Python using POM.
-I always welcome for constructive feedback and anybody can pull this code and make this code better.
-Let us learn together !!!
+Introduction:
+  This repo is all about Playwright with Python using POM.
+ 
+Installation Dependencies:
+	Python 3.9
+	Pytest-playwright
+	allure-report
+	
+	
+Execution command:
+To execute all test cases: pytest ./Test_Scripts/
+
+
+
