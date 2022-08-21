@@ -2,7 +2,8 @@
 
 
 class TestData:
-    baseURL = "https://www.saucedemo.com/"
+    baseURL = "https://www.saucedemo.com"
     userName = "standard_user"
     passWord = "secret_sauce"
     urlTitle = "Swag Labs"
+    homePage_Text = "Products"
