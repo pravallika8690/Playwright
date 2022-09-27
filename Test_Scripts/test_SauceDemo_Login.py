@@ -15,3 +15,9 @@ class TestLoginPage:
     def test_URL_Title(self, web_launch):
         urlTitle = web_launch.urlTitle()
         assert urlTitle == TestData.urlTitle
+
+    """Test case to verify the user login"""
+
+    def test_User_Login(self, web_login):
+        homePage_Text = web_login.homePage()
+        assert homePage_Text == TestData.homePage_Text, 'HomePage Texts are not same'
